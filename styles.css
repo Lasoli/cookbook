@@ -1,0 +1,523 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Reset CSS */
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(250, 226, 226);
+  padding: 5px 20px;
+}
+
+.intro_logo {
+  width: auto;
+  height: 80px;
+  padding: 5px 5px 20px 10px;
+}
+
+.intro_nav {
+  font-size: 23px;
+  font-family: "Garamond", "Serif";
+  margin-right: 80px;
+}
+
+nav a {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #b99675;
+  padding-right: 50px;
+}
+
+nav a:hover {
+  color: rgb(173, 109, 48);
+}
+
+.dropdown-toggle {
+  padding-right: 70px;
+}
+
+.dropdown-item {
+  text-transform: lowercase;
+  font-family: "Garamond", "Serif";
+}
+
+.section2 {
+  position: relative;
+  border: 1px solid grey;
+}
+
+.intro_image {
+  width: 100%;
+  height: 300px;
+  background-image: url("https://s1.qwant.com/thumbr/0x380/9/b/3fa225ab02fe19506c73f5d480d182239e92f0104fd5a90327bd764739fdaa/healthy_and_unhealthy_food_1.jpg?u=https%3A%2F%2Fnews.gatech.edu%2Fsites%2Fdefault%2Ffiles%2Fuploads%2Fmercury_images%2Fhealthy_and_unhealthy_food_1.jpg&q=0&b=1&p=0&a=1");
+  contain: content;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro_image:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+}
+
+.intro_title {
+  color: black;
+  font-family: "Garamond", "Serif";
+  position: absolute;
+  top: 0;
+  /* Gio: To center absolute elements you can reset left/right
+  and then center the element with margins: 0 auto as we learned.
+  */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.section2 h1 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.section2 p {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.line {
+  height: 10px;
+  width: 350px;
+  border-top: 4px solid black;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.section3_box {
+  text-align: center;
+  background: url(https://s2.qwant.com/thumbr/0x380/c/0/ee863dde83b7e89d73f0b8a5e1f845a8b685a13ab8dc7c34aa446598b7a6a1/White-Wood-Texture.jpg?u=http%3A%2F%2Fimages.designtrends.com%2Fwp-content%2Fuploads%2F2015%2F12%2F21045108%2FWhite-Wood-Texture.jpg&q=0&b=1&p=0&a=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 70px 20px 150px 20px;
+}
+
+.section3_picture {
+  width: 300px;
+  height: 230px;
+  border: 2px solid rgb(63, 59, 55);
+  box-shadow: 0 10px 20px 0 rgba(27, 25, 25, 0.2),
+    0 20px 40px 0 rgba(22, 21, 21, 0.19);
+  border-radius: 25px;
+}
+
+h3 {
+  margin: 30px 0 10px 0;
+  font-size: 50px;
+  font-family: "Garamond", "Serif";
+}
+
+.footer {
+  position: fixed;
+  background-color: rgb(250, 226, 226);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 120px;
+  left: 0;
+  bottom: 0;
+}
+
+.footer ul li {
+  display: inline;
+}
+
+.footer ul li a {
+  display: inline;
+}
+
+/*
+footer {
+  color: dimgrey;
+  line-height: 60px;
+  position: absolute;
+}
+*/
+/*
+.footer a {
+  text-decoration: none;
+  color: dimgrey;
+  padding-right: 130px;
+}
+
+.footer a:hover {
+  opacity: 0.7;
+  color: darkred;
+}
+*/
+/*
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}*/
+
+/*
+.fa:hover {
+  opacity: 0.7;
+  color: dimgrey;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}*/
+
+/* flip social icons */
+
+.social-list {
+  display: inline-flex;
+}
+
+.social-list li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.maincard {
+  position: relative;
+  width: 120px;
+  height: 80px;
+}
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hidden;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #eee;
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  padding: 4px;
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: hidden;
+  color: #fff;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  border: 1px solid #eee;
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  padding: 4px;
+}
+
+.social-text small {
+  font-size: 20px;
+}
+/*
+@media (max-width: 700px) {
+  .social-list {
+    display: block;
+  }
+} */
+
+.facebook {
+  background: #3b5998;
+}
+
+.instagram {
+  background: #3f729b;
+}
+
+.youtube {
+  background: #ff0000;
+}
+/* flip end */
+
+/* CSS recipes */
+
+.container h2 {
+  text-align: center;
+  margin: 50px 0 70px 0;
+  font-size: 70px;
+  font-family: "Garamond", "Serif";
+  font-style: italic;
+}
+
+.img-col img {
+  border-radius: 45px;
+}
+
+/* HOVER */
+
+.container-hover {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+.img-hover {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 40px;
+  background: rgb(0, 0, 0);
+  background: rgba(243, 184, 184, 0.8); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: black;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+.container-hover:hover .overlay {
+  opacity: 1;
+}
+
+/* HOVER */
+
+.recipe {
+  margin: 100px 0px;
+  font-family: "Garamond", "Serif";
+}
+.recipe-box {
+  margin-bottom: 250px;
+}
+
+/* CSS recipes */
+
+/* CSS contact */
+
+form {
+  width: 100%;
+}
+.form-group {
+  margin: 20px;
+}
+.form-group button {
+  float: right;
+}
+.fa-envelope {
+  margin: 5px 1px;
+}
+.fa-phone {
+  margin: 5px 1px;
+}
+
+/* CSS contact */
+
+/* This applies from 768px onwards 
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+write csss style for desktop */
+
+/* Mobile-first */
+
+/* This applies from 0px to 768px */
+@media (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  nav a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #b99675;
+    margin: 0px;
+    padding: 3px;
+    border: 0px;
+  }
+  .dropdown-toggle {
+    padding-right: 3px;
+  }
+  .intro_logo {
+    width: 20%;
+    height: 50px;
+    padding: 0px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .intro_title h1 {
+    font-size: 40px;
+  }
+  .intro_title p {
+    font-size: 20px;
+  }
+  .intro_title hr {
+    height: 2px;
+    width: 100px;
+    border-top: 4px solid black;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .section2 {
+    /*position: relative; 
+    border: 1px solid grey; */
+    margin: 10px 5px;
+  }
+  .section3_box {
+    background-size: 600px 800px;
+    background-repeat: repeat;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    padding: 7px 2px 20px 2px;
+    margin-bottom: 100px;
+  }
+  .section3_picture {
+    width: 200px;
+    height: 150px;
+    border: 2px solid rgb(32, 31, 29);
+    box-shadow: 0 4px 8px 0 rgba(233, 216, 216, 0.2),
+      0 6px 20px 0 rgba(240, 224, 224, 0.19);
+    border-radius: 25px;
+    margin-top: 10px;
+  }
+  h3 {
+    margin: 5px 0 10px 0;
+    font-size: 25px;
+  }
+
+  /* CSS recipes mobile */
+  .container h2 {
+    margin: 20px 0 0 0;
+    font-size: 50px;
+  }
+  .recipe {
+    margin: 30px 0px;
+  }
+  .recipe-box {
+    margin-bottom: 150px;
+  }
+  .squiggle img {
+    display: none;
+  }
+  .img-col img {
+    display: none;
+  }
+  /* CSS recipes mobile */
+
+  /* CSS footer mobile */
+  .social-list li {
+    margin-right: 15px;
+  }
+  .maincard {
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .social-text small {
+    font-size: 10px;
+  }
+  /* CSS footer mobile */
+
+  /* CSS contact mobile */
+  .form-group {
+    margin: 20px;
+  }
+  .form-group button {
+    margin-top: 30px;
+  }
+  .contact {
+    margin-bottom: 150px;
+  }
+}
+/* CSS contact mobile */
+
+/* Mobile-first */
